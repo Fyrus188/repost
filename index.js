@@ -1067,7 +1067,7 @@ else if (text == '#info'){
 conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *_XONTOL BOT_* , Follow Instagram Mimin Yah🔍� : https://instagram.com/@IndraFajri64' ,MessageType.text);
 }
 if (messageType == 'imageMessage')
-         } = require("child_process");
+          = require("child_process");
          exec('cwebp -q 50 ' + stiker + ' -o temp/' + jam + '.webp', (error, stdout, stderr) =>
          {
             let stik = fs.readFileSync('temp/' + jam + '.webp')
