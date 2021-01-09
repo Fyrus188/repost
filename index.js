@@ -1067,7 +1067,7 @@ else if (text == '#info'){
 conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *_XONTOL BOT_* , Follow Instagram Mimin Yah🔍� : https://instagram.com/@IndraFajri64' ,MessageType.text);
 }
 if (messageType == 'imageMessage')
-          = require("child_process");
+         } = require("child_process");
          exec('cwebp -q 50 ' + stiker + ' -o temp/' + jam + '.webp', (error, stdout, stderr) =>
          {
             let stik = fs.readFileSync('temp/' + jam + '.webp')
@@ -1868,6 +1868,7 @@ if (text.includes("#alay")){
 		{ let hasil = `${res.data.text}`
 		conn.sendMessage(id, hasil, MessageType.text)
 	})
+}
                  case 'bc':
 					if (!isOwner) return reply('Kamu siapa?')
 					if (args.length < 1) return reply('.......')
@@ -1882,7 +1883,6 @@ if (text.includes("#alay")){
 					} else {
 						for (let _ of anu) {
 							sendMess(_.jid, `[ *XONTOL BROADCAST* ]\n\n${body.slice(4)}`)
-						}
 						reply('Suksess broadcast')
 						case 'clearall':
 					if (!isOwner) return reply('Kamu siapa?')
@@ -1890,7 +1890,7 @@ if (text.includes("#alay")){
 					client.setMaxListeners(25)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
-					}
+						}
 					reply('Sukses delete all chat :)')
 					break
 					case 'clearall':
@@ -1902,4 +1902,7 @@ if (text.includes("#alay")){
 					}
 					reply('Sukses delete all chat :)')
 					break
+				});
+			}
+		}
 
